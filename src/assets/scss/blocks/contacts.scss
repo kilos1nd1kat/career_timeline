@@ -1,0 +1,39 @@
+.contacts {
+	padding: 1.8rem 0;
+
+	@media screen and (max-width: 425px) {
+		padding: 1rem 0;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		@media screen and (max-width: 425px) {
+			display: block;
+			line-height: 2.2;
+		}
+	}
+
+	&__list__icon {
+		width: 16px;
+
+		@media screen and (max-width: 425px) {
+			display: none;
+		}
+	}
+
+	&__list__link {
+		font-family: $opensans;
+		font-size: 1.1rem;
+		font-weight: 300;
+		color: $primary;
+		text-decoration: none;
+
+		@media screen and (max-width: 768px) {
+			font-size: 1rem;
+		}
+	}
+
+}

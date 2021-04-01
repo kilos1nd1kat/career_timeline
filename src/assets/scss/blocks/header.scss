@@ -1,0 +1,43 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	padding: 2% 0;
+	border-bottom: 5px solid $secondary;
+
+	@media screen and (max-width: 768px){
+		flex-direction: column;
+		padding: 3% 0;
+	}
+
+	@media screen and (max-width: 375px) {
+		padding: 6% 0;
+	}
+
+	&__logo {
+		font-family: $roboto;
+		font-size: 4rem;
+		font-weight: 100;
+		line-height: 1;
+		white-space: nowrap;
+
+		@media screen and (max-width: 375px) {
+			font-size: 3rem;
+		}
+	}
+
+	&__text {
+		font-family: $opensans;
+		font-weight: 300;
+		font-size: 1.1rem;
+		margin: 0 0 0 30px;
+
+		@media screen and (max-width: 768px) {
+			margin: 15px 0 0 0;
+		}
+
+		@media screen and (max-width: 425px) {
+			font-size: 0.9rem;
+		}
+	}
+}
