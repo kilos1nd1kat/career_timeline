@@ -1,5 +1,3 @@
-"use strict";
-
 const {src, dest} = require("gulp");
 const gulp = require("gulp");
 const autoprefixer = require("gulp-autoprefixer");
@@ -49,9 +47,7 @@ const path = {
 }
 
 
-
 /* Tasks */
-
 function serve() {
     browserSync.init({
         server: {
@@ -239,7 +235,6 @@ function watchFiles() {
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
 const watch = gulp.parallel(build, watchFiles, serve);
-
 
 
 /* Exports Tasks */
