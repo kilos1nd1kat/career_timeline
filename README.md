@@ -1,3 +1,3 @@
-<h1>career_timeline_v2</h1>
+<h1>career_timeline</h1>
 
 Demo - https://kilos1nd1kat.github.io/career_timeline_v2/
